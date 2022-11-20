@@ -1,0 +1,20 @@
+---
+sources:
+    PRIMAP:
+        description: PRIMAP-hist v2.4 (no extrapolation)
+        args:
+            urlpath: https://w3s.link/ipfs/bafybeibhqlo5s3vssqcqfk3z4hy654dfwhpft56mwxfohfssjcvvdqrbsm
+        driver: intake.source.csv.CSVSource
+        metadata: {
+            datasource: https://zenodo.org/record/7179775,
+            last_updated: 2022-11-17,
+            emissions_unit: tonnes-CO2e}
+    UNFCCC:
+        description: ANNEX1 countries GHG total emissions without LULUCF,
+        args:
+            urlpath: https://w3s.link/ipfs/bafkreihh6tecdqjdzttyeyy5sdanuiulpsxup2d7727btgydx3aw2nm6fy
+        driver: intake.source.csv.CSVSource
+        metadata: {
+            datasource: https://di.unfccc.int/time_series,
+            last_updated: 2019-11-08,
+            emissions_unit: tonnes-CO2e}
